@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .main{
+            height: 750px;
+            width: 600px;
+            border: 2px red solid;
+            margin: auto;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-column-gap: 30px;
+            grid-row-gap: 30px;
+            padding: 10px;
+        }
+        .main div{
+            padding: 50px;
+            font-size: 50px;
+            background-color: aqua;
+            border: 1px black solid;
+        }
+        #div1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 5;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div id="div1">1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+</body>
+</html>
